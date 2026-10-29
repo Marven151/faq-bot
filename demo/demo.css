@@ -1,0 +1,152 @@
+:root {
+  --ground: #f3f6f4;
+  --ink: #0e2621;
+  --green: #0b6e4f;
+  --field: #0e3b31;
+  --field-ink: #e9f3ee;
+  --mint: #d9ebe2;
+  --sun: #f2c14e;
+  --display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --text: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gutter: clamp(16px, 4vw, 48px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 18px;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 800; letter-spacing: -0.025em; line-height: 1; margin: 0; }
+p { margin: 0; }
+a { color: inherit; text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 16px; top: 16px; z-index: 10; background: var(--ink); color: #fff; padding: 8px 12px; }
+
+.demo-note {
+  padding: 10px var(--gutter);
+  background: var(--sun);
+  font-size: 15px;
+}
+.demo-note a { font-weight: 700; margin-left: 4px; }
+
+.bar {
+  display: flex; align-items: center; gap: 24px;
+  padding: 18px var(--gutter);
+}
+.wordmark { font-family: var(--display); font-weight: 800; font-size: 22px; letter-spacing: -0.02em; text-decoration: none; margin-right: auto; }
+.bar nav { display: flex; gap: 24px; }
+.bar nav a { text-decoration: none; font-weight: 700; }
+.bar nav a:hover { text-decoration: underline; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 52px; padding: 0 24px;
+  background: var(--green); color: #fff;
+  border: 2px solid var(--green); border-radius: 999px;
+  font-weight: 700; text-decoration: none;
+}
+.btn:hover { background: var(--field); border-color: var(--field); }
+.btn-small { min-height: 42px; padding: 0 18px; font-size: 16px; }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn-ghost:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+.btn-light { background: var(--sun); color: var(--ink); border-color: var(--sun); }
+.btn-light:hover { background: #fff; border-color: #fff; color: var(--ink); }
+
+/* Hero: headline left, the door plaque right */
+.hero {
+  display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.85fr);
+  gap: clamp(32px, 5vw, 80px); align-items: end;
+  padding: clamp(40px, 7vw, 104px) var(--gutter) clamp(64px, 9vw, 140px);
+}
+.hero h1 { font-size: clamp(48px, 7.4vw, 112px); max-width: 11ch; letter-spacing: -0.04em; line-height: 0.92; }
+.lede { margin-top: 28px; max-width: 34em; font-size: 20px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+.plaque {
+  background: var(--field); color: var(--field-ink);
+  border-radius: 28px 28px 6px 6px;
+  padding: 32px 32px 28px;
+}
+.plaque h2 { font-size: 34px; color: #fff; }
+.plaque-status { margin-top: 10px; font-weight: 700; color: var(--sun); }
+.plaque-status[data-open="yes"] { color: #8be0b4; }
+.plaque-hours { display: grid; grid-template-columns: auto auto; justify-content: space-between; gap: 8px 24px; margin: 24px 0 0; font-size: 19px; }
+.plaque-hours dt { font-weight: 700; color: #fff; }
+.plaque-hours dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.plaque-foot { margin-top: 24px; font-size: 16px; color: #bcd5ca; }
+
+/* Ask section */
+.ask {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px);
+  padding: clamp(64px, 9vw, 140px) var(--gutter);
+  background: var(--mint);
+}
+.ask h2, .prices h2, .insurance h2, .first-visit h2, .visit h2 { font-size: clamp(36px, 4.6vw, 64px); }
+.ask-text p { margin-top: 20px; max-width: 32em; }
+.ask-owner { font-size: 16px; }
+.ask-try-label { font-weight: 700; margin-bottom: 12px; }
+.try-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.try-list button {
+  width: 100%; text-align: left; cursor: pointer;
+  padding: 14px 20px; border: 0; border-radius: 16px;
+  background: #fff; color: var(--ink);
+  font-family: var(--display); font-weight: 600; font-size: clamp(20px, 2vw, 26px); letter-spacing: -0.01em; line-height: 1.2;
+}
+.try-list button:hover { background: var(--ink); color: #fff; }
+
+/* Prices */
+.prices { padding: clamp(80px, 10vw, 160px) var(--gutter) clamp(64px, 8vw, 120px); }
+.section-lede { margin-top: 20px; max-width: 36em; }
+.price-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(32px, 6vw, 96px); margin-top: 48px; }
+.price-list { margin: 0; }
+.price-list div { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; }
+.price-list div:nth-child(odd) { background: transparent; }
+.price-list dt { font-size: 19px; }
+.price-list dd { margin: 0; font-family: var(--display); font-weight: 800; font-size: 24px; letter-spacing: -0.01em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.price-note { margin-top: 32px; padding: 20px 24px; background: #fff; border-radius: 16px; max-width: 46em; }
+
+/* Insurance */
+.insurance { padding: clamp(64px, 8vw, 120px) var(--gutter); background: var(--ink); color: #fff; }
+.plans { list-style: none; margin: 40px 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 40px; }
+.plans li { font-family: var(--display); font-weight: 600; font-size: clamp(28px, 3.6vw, 52px); letter-spacing: -0.03em; line-height: 1.1; color: #8be0b4; }
+.insurance p { max-width: 40em; color: #dce8e2; }
+
+/* First visit */
+.first-visit { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 96px); padding: clamp(80px, 10vw, 160px) var(--gutter); }
+.steps { margin: 0; padding-left: 1.4em; font-size: 20px; }
+.steps li { padding-left: 8px; }
+.steps li + li { margin-top: 20px; }
+.steps li::marker { font-family: var(--display); font-weight: 800; color: var(--green); }
+
+/* Visit */
+.visit { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: clamp(32px, 6vw, 96px); padding: clamp(64px, 9vw, 140px) var(--gutter); background: var(--green); color: #fff; }
+.visit p { margin: 20px 0 28px; max-width: 32em; }
+.visit h3 { font-size: 28px; margin-top: 8px; }
+.visit a:not(.btn) { color: #fff; font-weight: 700; }
+
+/* Footer */
+.foot { padding: 64px var(--gutter) 120px; font-size: 16px; }
+.foot-name { font-family: var(--display); font-weight: 800; font-size: clamp(44px, 9vw, 140px); letter-spacing: -0.045em; line-height: 0.9; margin-bottom: 32px; color: var(--green); }
+.foot p + p { margin-top: 8px; max-width: 46em; }
+
+@media (max-width: 860px) {
+  .hero, .ask, .first-visit, .visit, .price-cols { grid-template-columns: 1fr; }
+  .bar nav { display: none; }
+  .hero { align-items: start; }
+}
+@media (max-width: 520px) {
+  body { font-size: 17px; }
+  .lede { font-size: 18px; }
+  .plaque { padding: 24px 22px; }
+  .hero-actions .btn { flex: 1 1 100%; }
+  .price-list dt { font-size: 17px; }
+  .price-list dd { font-size: 20px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

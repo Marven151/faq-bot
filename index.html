@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alder Street Dental (fictional) – faq-bot demo</title>
+<meta name="description" content="Demo of faq-bot, an embeddable FAQ assistant for small business websites, installed on a fictional dental practice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="demo/demo.css">
+<script src="faq-bot.min.js" data-faq="demo/alder-street-dental.json" data-label="Ask us" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<p class="demo-note">
+  Fictional practice. This page shows <strong>faq-bot</strong>, a FAQ assistant for small business websites.
+  <a href="https://github.com/Marven151/faq-bot">See the code and pricing</a>
+</p>
+
+<header class="bar">
+  <a class="wordmark" href="#main">Alder Street Dental</a>
+  <nav aria-label="Main">
+    <a href="#prices">Prices</a>
+    <a href="#insurance">Insurance</a>
+    <a href="#book">Visit</a>
+  </nav>
+  <a class="btn btn-small" href="#book">Book a visit</a>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Family dentistry on Alder Street</h1>
+      <p class="lede">Cleanings, fillings, crowns and kids' visits in Fernwood, Oregon. Open six days a week, with time kept free every weekday for emergencies.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#book">Book a visit</a>
+        <a class="btn btn-ghost" href="tel:+15035550142">Call (503) 555-0142</a>
+      </div>
+    </div>
+    <aside class="plaque" aria-labelledby="plaque-title">
+      <h2 id="plaque-title">214 Alder Street</h2>
+      <p class="plaque-status" id="open-status">Hours below</p>
+      <dl class="plaque-hours">
+        <dt>Mon, Tue, Thu</dt><dd>8 AM–5 PM</dd>
+        <dt>Wednesday</dt><dd>10 AM–7 PM</dd>
+        <dt>Friday</dt><dd>8 AM–2 PM</dd>
+        <dt>Saturday</dt><dd>9 AM–1 PM</dd>
+        <dt>Sunday</dt><dd>Closed</dd>
+      </dl>
+      <p class="plaque-foot">Free parking behind the building, step-free entrance.</p>
+    </aside>
+  </section>
+
+  <section class="ask" aria-labelledby="ask-title">
+    <div class="ask-text">
+      <h2 id="ask-title">Ask before you call</h2>
+      <p>The assistant in the corner answers from this practice's own FAQ: prices, insurance, hours, parking, what to bring. When it does not know, it hands you to the front desk by email or phone, and saves the question so the office can add an answer.</p>
+      <p class="ask-owner">Running the practice? <a href="#faqbot-owner">Open the owner view</a> to see unanswered questions and export them as a spreadsheet.</p>
+    </div>
+    <div class="ask-try">
+      <p class="ask-try-label">Try one of these questions</p>
+      <ul class="try-list">
+        <li><button type="button" data-try="Do you take MetLife?">Do you take MetLife?</button></li>
+        <li><button type="button" data-try="my tooth is killing me">My tooth is killing me</button></li>
+        <li><button type="button" data-try="how much is teeth whitening">How much is teeth whitening?</button></li>
+        <li><button type="button" data-try="are you open saturday">Are you open Saturday?</button></li>
+        <li><button type="button" data-try="I'm scared of the dentist">I'm scared of the dentist</button></li>
+        <li><button type="button" data-try="do you do veneers">Do you do veneers?</button></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="prices" id="prices" aria-labelledby="prices-title">
+    <h2 id="prices-title">Prices before insurance</h2>
+    <p class="section-lede">Most PPO plans cover cleanings in full and about half of crowns and root canals. We give you a written estimate before any treatment.</p>
+    <div class="price-cols">
+      <dl class="price-list">
+        <div><dt>Cleaning, exam and x-rays</dt><dd>$189</dd></div>
+        <div><dt>Kids' cleaning and fluoride</dt><dd>$119</dd></div>
+        <div><dt>Tooth-colored filling</dt><dd>from $165</dd></div>
+        <div><dt>Emergency exam</dt><dd>$95</dd></div>
+        <div><dt>Nitrous oxide, per visit</dt><dd>$65</dd></div>
+      </dl>
+      <dl class="price-list">
+        <div><dt>Porcelain crown, same day</dt><dd>$1,150</dd></div>
+        <div><dt>Root canal, front tooth</dt><dd>from $890</dd></div>
+        <div><dt>In-office whitening</dt><dd>$395</dd></div>
+        <div><dt>Single implant with crown</dt><dd>from $3,900</dd></div>
+        <div><dt>Invisalign</dt><dd>$3,800–$5,600</dd></div>
+      </dl>
+    </div>
+    <p class="price-note">No insurance? Our membership is $29 a month and covers two cleanings, exams and x-rays a year, plus 20% off other treatment.</p>
+  </section>
+
+  <section class="insurance" id="insurance" aria-labelledby="insurance-title">
+    <h2 id="insurance-title">In network with five PPO plans</h2>
+    <ul class="plans">
+      <li>Delta Dental PPO</li>
+      <li>MetLife</li>
+      <li>Cigna PPO</li>
+      <li>Aetna PPO</li>
+      <li>Guardian</li>
+    </ul>
+    <p>With other PPO plans we file the claim for you as out of network. We do not accept HMO or Medicaid plans at this time. Send us your plan name and member ID and we will check your benefits before you come in.</p>
+  </section>
+
+  <section class="first-visit" aria-labelledby="first-title">
+    <h2 id="first-title">Your first visit</h2>
+    <ol class="steps">
+      <li><strong>Book online or call.</strong> Most cleanings fit in the same week.</li>
+      <li><strong>Fill in the forms at home.</strong> We send a link by text the day you book.</li>
+      <li><strong>Bring ID, your insurance card and a list of medications.</strong> Plan for about 75 minutes.</li>
+    </ol>
+  </section>
+
+  <section class="visit" id="book" aria-labelledby="visit-title">
+    <div>
+      <h2 id="visit-title">Book a visit</h2>
+      <p>Call <a href="tel:+15035550142">(503) 555-0142</a> or email <a href="mailto:hello@alderstreetdental.example">hello@alderstreetdental.example</a>. On a real site this button opens the practice's online booking tool.</p>
+      <a class="btn btn-light" href="tel:+15035550142">Call to book</a>
+    </div>
+    <div id="contact">
+      <h3>Find us</h3>
+      <p>214 Alder Street, Fernwood, OR<br>Free lot behind the building, 12 spaces, 2 accessible.<br>Two-hour street parking on Alder Street.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot-name">Alder Street Dental</p>
+  <p>Alder Street Dental, Fernwood and every name, price and phone number on this page are made up for a demo. The 555 numbers and .example addresses do not reach anyone.</p>
+  <p>faq-bot by Marcin Świerczyński. <a href="https://github.com/Marven151/faq-bot">Source on GitHub</a></p>
+</footer>
+
+<script>
+  (function () {
+    function whenReady(fn) {
+      if (window.FaqBot && window.FaqBot.ready) window.FaqBot.ready.then(fn);
+      else window.addEventListener('load', function () { if (window.FaqBot && window.FaqBot.ready) window.FaqBot.ready.then(fn); });
+    }
+    document.querySelectorAll('[data-try]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var q = b.getAttribute('data-try');
+        whenReady(function (bot) { if (bot) bot.ask(q); });
+      });
+    });
+    whenReady(function (bot) {
+      if (!bot) return;
+      var s = window.FaqBot.openStatus(bot.b.hours, bot.b.timeZone);
+      var el = document.getElementById('open-status');
+      el.textContent = s.text;
+      el.setAttribute('data-open', s.open ? 'yes' : 'no');
+    });
+  })();
+</script>
+</body>
+</html>

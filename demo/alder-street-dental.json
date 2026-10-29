@@ -1,0 +1,500 @@
+{
+  "business": {
+    "name": "Alder Street Dental",
+    "phone": "(503) 555-0142",
+    "email": "hello@alderstreetdental.example",
+    "address": "214 Alder Street, Fernwood, OR",
+    "bookingUrl": "#book",
+    "bookingLabel": "Book a visit",
+    "contactUrl": "#contact",
+    "timeZone": "America/Los_Angeles",
+    "hours": {
+      "mon": [["08:00", "17:00"]],
+      "tue": [["08:00", "17:00"]],
+      "wed": [["10:00", "19:00"]],
+      "thu": [["08:00", "17:00"]],
+      "fri": [["08:00", "14:00"]],
+      "sat": [["09:00", "13:00"]],
+      "sun": []
+    },
+    "hoursNote": "We take lunch from 12:30 to 1:15 PM, but the phone is answered."
+  },
+  "greeting": "Hi! I can answer questions about Alder Street Dental: hours, insurance, prices, appointments and what to expect. What would you like to know?",
+  "starters": [
+    "Do you take my insurance?",
+    "How much is a cleaning?",
+    "I have a toothache",
+    "Where do I park?"
+  ],
+  "disclaimer": "Answers come from the practice's FAQ. For medical advice, please call us.",
+  "synonyms": {
+    "appointment": [
+      "appt",
+      "booking",
+      "book",
+      "schedule",
+      "reserve",
+      "slot",
+      "visit",
+      "consultation",
+      "consult"
+    ],
+    "insurance": [
+      "insurer",
+      "coverage",
+      "covered",
+      "cover",
+      "plan",
+      "ppo",
+      "hmo",
+      "delta",
+      "metlife",
+      "cigna",
+      "aetna",
+      "guardian",
+      "network",
+      "in network",
+      "out of network",
+      "benefits"
+    ],
+    "cost": [
+      "price",
+      "prices",
+      "pricing",
+      "fee",
+      "fees",
+      "charge",
+      "how much",
+      "expensive",
+      "cheap",
+      "rate",
+      "rates",
+      "afford"
+    ],
+    "emergency": [
+      "urgent",
+      "pain",
+      "toothache",
+      "hurts",
+      "hurt",
+      "hurting",
+      "ache",
+      "aching",
+      "killing me",
+      "swollen",
+      "swelling",
+      "abscess",
+      "broke",
+      "broken",
+      "chipped",
+      "cracked",
+      "knocked out",
+      "bleeding",
+      "same day",
+      "asap",
+      "right away"
+    ],
+    "cleaning": [
+      "clean",
+      "cleanings",
+      "hygiene",
+      "hygienist",
+      "scale",
+      "scaling",
+      "polish",
+      "plaque",
+      "tartar"
+    ],
+    "whitening": [
+      "whiten",
+      "bleach",
+      "bleaching",
+      "white",
+      "whiter",
+      "stains",
+      "stained",
+      "yellow"
+    ],
+    "child": [
+      "kid",
+      "kids",
+      "children",
+      "son",
+      "daughter",
+      "toddler",
+      "baby",
+      "pediatric",
+      "teen",
+      "teenager",
+      "family"
+    ],
+    "parking": [
+      "park",
+      "garage",
+      "lot",
+      "drive"
+    ],
+    "nervous": [
+      "anxious",
+      "anxiety",
+      "scared",
+      "afraid",
+      "fear",
+      "phobia",
+      "sedation",
+      "nitrous",
+      "laughing gas"
+    ],
+    "cancel": [
+      "reschedule",
+      "cancellation",
+      "move my",
+      "change my",
+      "late",
+      "no show",
+      "miss"
+    ],
+    "new": [
+      "first",
+      "first time",
+      "new patient",
+      "never been"
+    ],
+    "xray": [
+      "x ray",
+      "x-ray",
+      "x rays",
+      "xrays",
+      "radiograph"
+    ],
+    "implant": [
+      "implants",
+      "missing tooth",
+      "replace a tooth",
+      "bridge"
+    ],
+    "aligner": [
+      "aligners",
+      "invisalign",
+      "braces",
+      "straighten",
+      "straight",
+      "crooked",
+      "orthodontic"
+    ],
+    "hours": [
+      "open",
+      "opening",
+      "close",
+      "closing",
+      "closed",
+      "weekend",
+      "saturday",
+      "sunday",
+      "evening"
+    ],
+    "location": [
+      "where",
+      "address",
+      "directions",
+      "located",
+      "find you",
+      "near"
+    ],
+    "phone": [
+      "call",
+      "number",
+      "telephone",
+      "text",
+      "contact"
+    ],
+    "payment": [
+      "financing",
+      "payment plan",
+      "monthly",
+      "credit card",
+      "carecredit",
+      "hsa",
+      "fsa",
+      "cash",
+      "pay"
+    ],
+    "uninsured": [
+      "no insurance",
+      "no dental insurance",
+      "dont have insurance",
+      "dont have dental insurance",
+      "do not have insurance",
+      "do not have dental insurance",
+      "without insurance",
+      "not insured",
+      "self pay"
+    ],
+    "accept": [
+      "take",
+      "takes",
+      "taking",
+      "accepted",
+      "accepting"
+    ]
+  },
+  "faqs": [
+    {
+      "id": "insurance",
+      "question": "Do you take my insurance?",
+      "keywords": [
+        "insurance",
+        "delta",
+        "metlife",
+        "cigna",
+        "aetna",
+        "guardian",
+        "in network"
+      ],
+      "answer": "We are in network with Delta Dental PPO, MetLife, Cigna PPO, Aetna PPO and Guardian. With other PPO plans we file the claim for you as out of network, and most patients still get a large part covered. We do not accept HMO or Medicaid plans at this time.\nSend us your plan name and member ID before your visit and we will check your benefits for free.",
+      "links": [
+        {
+          "label": "Email your plan details",
+          "url": "email"
+        }
+      ]
+    },
+    {
+      "id": "no-insurance",
+      "question": "What if I don't have dental insurance?",
+      "keywords": [
+        "uninsured",
+        "membership",
+        "savings plan"
+      ],
+      "answer": "Our in-house membership is $29 a month (or $319 a year) and covers two cleanings, exams and routine x-rays, plus 20% off other treatment. There is no waiting period."
+    },
+    {
+      "id": "cleaning-cost",
+      "question": "How much is a cleaning?",
+      "keywords": [
+        "cleaning",
+        "cost",
+        "exam"
+      ],
+      "answer": "A cleaning, exam and routine x-rays costs $189 for self-pay patients, or $0 on our membership. With insurance, preventive visits are usually covered in full.",
+      "links": [
+        {
+          "label": "Book a cleaning",
+          "url": "booking"
+        }
+      ]
+    },
+    {
+      "id": "whitening",
+      "question": "Do you do teeth whitening, and how much is it?",
+      "keywords": [
+        "whitening",
+        "cost",
+        "zoom",
+        "trays"
+      ],
+      "answer": "Yes. In-office whitening takes about 90 minutes and costs $395. Take-home custom trays with gel cost $249. We check your gums and existing fillings first, because whitening does not change the color of crowns or fillings."
+    },
+    {
+      "id": "emergency",
+      "question": "I have a toothache or a dental emergency. Can you see me today?",
+      "keywords": [
+        "emergency",
+        "toothache",
+        "pain",
+        "same day",
+        "broken tooth",
+        "swelling"
+      ],
+      "answer": "Call us at (503) 555-0142 as soon as you can. We keep time open every weekday for emergencies and can usually see you the same day.\nIf you have swelling that affects your breathing or swallowing, go to the nearest emergency room or call 911.\nAfter hours, call the office number and follow the prompt to reach the on-call dentist.",
+      "links": [
+        {
+          "label": "Call the office",
+          "url": "phone"
+        }
+      ]
+    },
+    {
+      "id": "new-patient",
+      "question": "Are you accepting new patients? What should I bring?",
+      "keywords": [
+        "new",
+        "accepting",
+        "bring",
+        "first visit",
+        "paperwork",
+        "forms"
+      ],
+      "answer": "Yes, we are accepting new patients of all ages. Please bring a photo ID, your insurance card and a list of medications. You can fill in the forms online before your visit to save 15 minutes in the waiting room. Plan for about 75 minutes for the first appointment.",
+      "links": [
+        {
+          "label": "Book a visit",
+          "url": "booking"
+        }
+      ]
+    },
+    {
+      "id": "book",
+      "question": "How do I book an appointment?",
+      "keywords": [
+        "appointment",
+        "book",
+        "online",
+        "schedule",
+        "make"
+      ],
+      "answer": "Book online any time with the booking link, or call (503) 555-0142 during office hours. Most cleanings can be booked within the same week.",
+      "links": [
+        {
+          "label": "Book a visit",
+          "url": "booking"
+        }
+      ]
+    },
+    {
+      "id": "cancel",
+      "question": "How do I cancel or reschedule?",
+      "keywords": [
+        "cancel",
+        "reschedule",
+        "change appointment",
+        "fee"
+      ],
+      "answer": "Call or text (503) 555-0142 at least 24 hours ahead and we will move your appointment at no charge. Late cancellations and missed visits may be charged $50.",
+      "links": [
+        {
+          "label": "Call or text us",
+          "url": "phone"
+        }
+      ]
+    },
+    {
+      "id": "kids",
+      "question": "Do you see children?",
+      "keywords": [
+        "child",
+        "age",
+        "first visit",
+        "baby teeth",
+        "sealants"
+      ],
+      "answer": "Yes, we see the whole family. We recommend a first visit by your child's first birthday or when the first tooth appears. Kids' visits are short, gentle and include a small prize at the end. Sealants and fluoride are available."
+    },
+    {
+      "id": "nervous",
+      "question": "I'm nervous about the dentist. Can you help?",
+      "keywords": [
+        "nervous",
+        "sedation",
+        "laughing gas",
+        "gentle"
+      ],
+      "answer": "You are not alone, and you can tell us at booking. We explain each step before we do it, you can raise a hand to pause at any time, and we offer nitrous oxide (laughing gas) for $65 a visit. Noise-canceling headphones and blankets are free."
+    },
+    {
+      "id": "parking",
+      "question": "Where do I park?",
+      "keywords": [
+        "parking",
+        "free",
+        "lot",
+        "wheelchair",
+        "accessible"
+      ],
+      "answer": "There is a free lot behind the building with 12 spaces, two of them accessible. The entrance from the lot is step-free. Street parking on Alder Street is free for two hours."
+    },
+    {
+      "id": "payment",
+      "question": "What forms of payment do you accept? Do you offer payment plans?",
+      "keywords": [
+        "payment",
+        "credit card",
+        "carecredit",
+        "hsa",
+        "fsa",
+        "plan",
+        "monthly"
+      ],
+      "answer": "We accept all major credit cards, debit, HSA and FSA cards, and cash. For treatment over $500 we offer CareCredit and interest-free payment plans over 6 or 12 months."
+    },
+    {
+      "id": "crown",
+      "question": "How much does a crown cost, and how long does it take?",
+      "keywords": [
+        "crown",
+        "cost",
+        "cap",
+        "same day crown"
+      ],
+      "answer": "A porcelain crown costs $1,150 before insurance, and most PPO plans cover about half. We make most crowns in-house in one visit of about two hours."
+    },
+    {
+      "id": "root-canal",
+      "question": "Do you do root canals?",
+      "keywords": [
+        "root canal",
+        "nerve",
+        "infection",
+        "endodontic"
+      ],
+      "answer": "Yes, we do most front-tooth and premolar root canals here ($890 to $1,090 before insurance). Complex molar cases are referred to a specialist across the street, and we coordinate the visit for you."
+    },
+    {
+      "id": "implant",
+      "question": "Do you offer dental implants?",
+      "keywords": [
+        "implant",
+        "missing tooth",
+        "bridge",
+        "denture"
+      ],
+      "answer": "Yes. A single implant with its crown starts at $3,900. We begin with a consultation and 3D scan ($95, credited toward treatment) to check if an implant is right for you. Bridges and dentures are also options."
+    },
+    {
+      "id": "aligner",
+      "question": "Do you offer clear aligners or braces?",
+      "keywords": [
+        "aligner",
+        "invisalign",
+        "braces",
+        "straighten"
+      ],
+      "answer": "We offer Invisalign clear aligners for teens and adults, from $3,800 to $5,600 depending on the case. Consultations are free. For traditional braces we refer to a local orthodontist."
+    },
+    {
+      "id": "xray",
+      "question": "Are x-rays safe? How often do I need them?",
+      "keywords": [
+        "xray",
+        "radiation",
+        "safe",
+        "often"
+      ],
+      "answer": "We use digital x-rays, which use far less radiation than film. Most adults need bite-wing x-rays once a year and a full set every three to five years. Let us know if you are pregnant."
+    },
+    {
+      "id": "cleaning-often",
+      "question": "How often should I get a cleaning?",
+      "keywords": [
+        "cleaning",
+        "often",
+        "every six months",
+        "how frequently"
+      ],
+      "answer": "Most people do well with a cleaning every six months. If you have gum disease we usually recommend every three or four months."
+    },
+    {
+      "id": "spanish",
+      "question": "Do you speak Spanish?",
+      "keywords": [
+        "spanish",
+        "espanol",
+        "language",
+        "translator",
+        "interpreter"
+      ],
+      "answer": "Yes. Two of our team members speak Spanish, and we can book a phone interpreter for other languages at no cost."
+    }
+  ]
+}
