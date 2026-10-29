@@ -65,7 +65,7 @@ a { color: inherit; text-underline-offset: 3px; }
   gap: clamp(32px, 5vw, 80px); align-items: end;
   padding: clamp(40px, 7vw, 104px) var(--gutter) clamp(64px, 9vw, 140px);
 }
-.hero h1 { font-size: clamp(48px, 7.4vw, 112px); max-width: 11ch; letter-spacing: -0.04em; line-height: 0.92; }
+.hero h1 { font-size: clamp(40px, 6.6vw, 104px); max-width: 16ch; text-wrap: balance; letter-spacing: -0.04em; line-height: 0.92; }
 .lede { margin-top: 28px; max-width: 34em; font-size: 20px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 
